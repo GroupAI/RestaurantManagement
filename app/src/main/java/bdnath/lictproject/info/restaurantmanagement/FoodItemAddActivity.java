@@ -1,4 +1,4 @@
-package bdnath.lictproject.info.restaurantmanagement.FoodPackage;
+package bdnath.lictproject.info.restaurantmanagement;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
