@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodPackage.FoodItemAddActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Food Name: "
+                    android:textColor="#800291"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/fullNameET"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="full name" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Food Type "
+                    android:textColor="#800291"
+                    android:layout_weight="2"
+                    android:textSize="20sp" />
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="4">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <RadioButton
+                                android:id="@+id/snack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Snacks"/>
+                            <RadioButton
+                                android:id="@+id/heve"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Heve"/>
+                        </TableRow>
+                        <TableRow>
+                            <RadioButton
+                                android:id="@+id/dessert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Desseret"/>
+                            <RadioButton
+                                android:id="@+id/drink"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="drink"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </RadioGroup>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Price: "
+                    android:textColor="#800291"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="food price" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Detail: "
+                    android:textColor="#800291"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/detailET"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="food description" />
+            </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="Take a image: "
+                android:textColor="#800291"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_weight="2"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_add"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="imageTake"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textColor="#800291"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+        <Button
+            android:id="@+id/loginBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Up"
+            android:layout_margin="5dp"
+            android:onClick="upBotton"
+            android:background="#800291"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="#800291"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="cancleBatton"
+            android:text="Cancle"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -7,9 +7,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
+import bdnath.lictproject.info.restaurantmanagement.FoodPackage.DessertsFragment;
+import bdnath.lictproject.info.restaurantmanagement.FoodPackage.DrinksFragment;
+import bdnath.lictproject.info.restaurantmanagement.FoodPackage.HeveFragment;
+import bdnath.lictproject.info.restaurantmanagement.FoodPackage.SnacksFragment;
 
 public class MainActivity extends AppCompatActivity {
 
