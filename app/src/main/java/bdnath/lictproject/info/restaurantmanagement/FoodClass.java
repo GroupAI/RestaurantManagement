@@ -9,18 +9,32 @@ public class FoodClass {
     private String foodType;
     private String foodPrice;
     private String foodDetails;
+    private String foodImagePath;
 
     public FoodClass() {
     }
 
-    public FoodClass(int index, String foodName, String foodType, String foodPrice, String foodDetails) {
+    public String getImagePath() {
+        return foodImagePath;
+    }
+
+    public FoodClass(int index, String foodName, String foodType, String foodPrice, String foodDetails, String foodImagePath) {
         this.index = index;
         this.foodName = foodName;
         this.foodType = foodType;
         this.foodPrice = foodPrice;
         this.foodDetails = foodDetails;
+        this.foodImagePath=foodImagePath;
+
     }
 
+    public FoodClass(String foodName, String foodType, String foodPrice, String foodDetails,String foodImagePath) {
+        this.foodName = foodName;
+        this.foodType = foodType;
+        this.foodPrice = foodPrice;
+        this.foodDetails = foodDetails;
+        this.foodImagePath=foodImagePath;
+    }
     public FoodClass(String foodName, String foodType, String foodPrice, String foodDetails) {
         this.foodName = foodName;
         this.foodType = foodType;
