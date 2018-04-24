@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     ViewPager tabViewPager;
 
+    private LoginActivity loginActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,6 +99,21 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem logoutItem = menu.findItem(R.id.menuLogout);
+
+        if(LoginActivity.getStatus()){
+            loginActivity.setVisible(false);
+            logoutItem.setVisible(true);
+        }else{
+            loginActivity.setVisible(true);
+            logoutItem.setVisible(false);
+        }
+
+        return super.onPrepareOptionsMenu(menu);
+
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -109,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.menuLogout:
-
+                loginActivity.setStatus(false);
                 break;
         }
 

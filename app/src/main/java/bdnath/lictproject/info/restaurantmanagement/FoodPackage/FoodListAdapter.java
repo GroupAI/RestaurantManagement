@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import bdnath.lictproject.info.restaurantmanagement.FoodClass;
 import bdnath.lictproject.info.restaurantmanagement.R;
 
 public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.FoodViewHolder> {

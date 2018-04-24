@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-import bdnath.lictproject.info.restaurantmanagement.FoodClass;
+import bdnath.lictproject.info.restaurantmanagement.FoodPackage.FoodClass;
 
 public class FoodDatabaseSource {
     private FoodDatabaseHelper helper;

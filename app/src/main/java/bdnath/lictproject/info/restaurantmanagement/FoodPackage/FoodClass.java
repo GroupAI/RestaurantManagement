@@ -1,4 +1,4 @@
-package bdnath.lictproject.info.restaurantmanagement;
+package bdnath.lictproject.info.restaurantmanagement.FoodPackage;
 
 import java.util.ArrayList;
 import java.util.List;
