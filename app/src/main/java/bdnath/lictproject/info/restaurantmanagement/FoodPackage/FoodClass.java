@@ -1,4 +1,4 @@
-package bdnath.lictproject.info.restaurantmanagement;
+package bdnath.lictproject.info.restaurantmanagement.FoodPackage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,37 +9,23 @@ public class FoodClass {
     private String foodType;
     private String foodPrice;
     private String foodDetails;
-    private String foodImagePath;
 
-    public FoodClass() {
-    }
-
-    public String getImagePath() {
-        return foodImagePath;
-    }
-
-    public FoodClass(int index, String foodName, String foodType, String foodPrice, String foodDetails, String foodImagePath) {
-        this.index = index;
-        this.foodName = foodName;
-        this.foodType = foodType;
-        this.foodPrice = foodPrice;
-        this.foodDetails = foodDetails;
-        this.foodImagePath=foodImagePath;
-
-    }
-
-    public FoodClass(String foodName, String foodType, String foodPrice, String foodDetails,String foodImagePath) {
-        this.foodName = foodName;
-        this.foodType = foodType;
-        this.foodPrice = foodPrice;
-        this.foodDetails = foodDetails;
-        this.foodImagePath=foodImagePath;
-    }
     public FoodClass(String foodName, String foodType, String foodPrice, String foodDetails) {
         this.foodName = foodName;
         this.foodType = foodType;
         this.foodPrice = foodPrice;
         this.foodDetails = foodDetails;
+    }
+
+    public FoodClass(int index, String foodName, String foodType, String foodPrice, String foodDetails) {
+        this.index = index;
+        this.foodName = foodName;
+        this.foodType = foodType;
+        this.foodPrice = foodPrice;
+        this.foodDetails = foodDetails;
+    }
+
+    public FoodClass() {
     }
 
     public int getIndex() {
@@ -82,12 +68,12 @@ public class FoodClass {
         this.foodDetails = foodDetails;
     }
 
-    public List<FoodClass>getFoodList(){
+/*    public List<FoodClass>getFoodList(){
         List<FoodClass> foodList = new ArrayList<>();
         foodList.add(new FoodClass("Biriyani","Heve Food","150","Heve food"));
         foodList.add(new FoodClass("Khicuri","Heve Food","150","Heve food"));
         foodList.add(new FoodClass("Polaw","Heve Food","150","Heve food"));
 
         return foodList;
-    }
+    }*/
 }

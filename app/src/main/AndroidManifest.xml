@@ -17,9 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegistrationActivity" />
-        <activity android:name=".FoodPackage.FoodItemAddActivity"></activity>
+        <activity android:name=".FoodItemAddActivity" />
+        <activity android:name=".FoodDetailActivity" />
+        <activity android:name=".FoodListActivity"></activity>
+        <activity android:name=".AdminLoginActivity"></activity>
     </application>
 
 </manifest>

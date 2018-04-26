@@ -14,7 +14,7 @@ public class FoodDatabaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_FOOD_COL_FOOD_NAME= "food_name";
     public static final String TABLE_FOOD_COL_FOOD_TYPE= "food_type";
     public static final String TABLE_FOOD_COL_FOOD_PRICE= "food_price";
-    public static final String TABLE_FOOD_COL_FOOD_IMGPATH= "food_img_path";
+   // public static final String TABLE_FOOD_COL_FOOD_IMGPATH= "food_img_path";
     public static final String TABLE_FOOD_COL_FOOD_DETAILS= "food_details";
 
     public static final String CREATE_TABLE_FOOD = "create table "+ TABLE_FOOD + "(" +
@@ -22,7 +22,6 @@ public class FoodDatabaseHelper extends SQLiteOpenHelper {
             TABLE_FOOD_COL_FOOD_NAME + " text, " +
             TABLE_FOOD_COL_FOOD_TYPE + " text, " +
             TABLE_FOOD_COL_FOOD_PRICE + " text, " +
-            TABLE_FOOD_COL_FOOD_IMGPATH + " text, " +
             TABLE_FOOD_COL_FOOD_DETAILS + " text);";
 
 

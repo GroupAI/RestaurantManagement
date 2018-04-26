@@ -11,7 +11,7 @@ public class LoginDatabaseHelper extends SQLiteOpenHelper {
 
 
     public LoginDatabaseHelper(Context context) {
-        super(context, name, factory, version);
+        super(context, DATABASE_NAME,null,DATABASE_VERSION);
     }
 
     @Override

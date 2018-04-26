@@ -14,10 +14,10 @@ public class LandingActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(LandingActivity.this,LoginActivity.class);
+                Intent intent = new Intent(LandingActivity.this,AdminLoginActivity.class);
                 startActivity(intent);
                 finish();
             }
-        },3000);
+        },1000);
     }
 }

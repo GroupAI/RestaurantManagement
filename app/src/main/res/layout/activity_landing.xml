@@ -6,19 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".LandingActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Patuk Resturent"
-        android:textSize="25sp"
-        android:textColor="#800291"/>
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressBar2"
+            android:layout_centerHorizontal="true"
+            android:text="Patuk"
+            android:textColor="#800291"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="214dp" />
+    </LinearLayout>
 
 
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
 </RelativeLayout>
